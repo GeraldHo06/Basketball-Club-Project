@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APU | Basketball</title>
+
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="shop.css"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+  <!-- Boxicons and FontAwesome -->
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+  <div class="header-welcome">
+    <header>
+      <input type="checkbox" id="menucheck" name="menucheck"/>
+      <div class="logo">
+        <img src="../image/logo.png" class="apulogo" alt="logo"/>
+        <span>APU Basketball Club</span>
+      </div>
+
+      <nav class="navigation">
+        <img src="../image/logo.png" class="apulogo" alt="logo"/>
+        <div class="divider"></div>
+        <a href="../home/home.html">Home</a>
+        <a href="../story/story.html">Our Story</a>
+        <a href="../news/news.html">News</a>
+        <a href="../team/team.html">Team</a>
+        <a href="../matches/matches.html">Matches</a>
+        <a href="../events/events.html">Events</a>
+        <a href="../gallery/gallery.html">Gallery</a>
+        <a href="../shop/shop.html">Shop</a>
+        <a href="../form/form.html">Join Us</a>
+        <a href="../contact/contact.html">Contact Us</a>
+        <a href="../faq/faq.html">FAQ</a>
+      </nav>
+
+      <div class="open-close">
+        <label for="menucheck">
+          <i class="bx bx-menu-wider menu"></i>
+          <i class="bx bx-x close"></i>
+        </label>
+      </div>
+    </header>
+  </div>
+
+  <div class="shop-header">
+    <h1>🏀 APU Basketball Club Merchandise</h1>
+    <p>Come support the team !!</p>
+  </div>
+
+  <div class="shop-filter">
+    <button onclick="filterItems('all')" class="filter-btn active">All</button>
+    <button onclick="filterItems('jersey')" class="filter-btn">Jerseys</button>
+    <button onclick="filterItems('gear')" class="filter-btn">Gears</button>
+    <button onclick="filterItems('accessories')" class="filter-btn">Accessories</button>
+  </div>
+
+  <section class="shop-layout">
+    <div class="shop-grid" id="product-list">
+      <div class="shop-card" data-id="jersey1" data-category="jersey" data-price="179" data-title="2025 Jersey">
+        <img src="../image/shop-jersey.png" alt="2025 Jersey"/>
+        <h3>2024 Jersey</h3>
+        <p>RM179.00</p>
+        <button onclick="addToCartElement(this)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card" data-id="jersey2" data-category="jersey" data-price="159" data-title="2024 Jersey">
+        <img src="../image/jersey2.png" alt="2025 Jersey"/>
+        <h3>2025 Jersey</h3>
+        <p>RM159.00</p>
+        <button onclick="addToCartElement(this)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card" data-id="gear1" data-category="gear" data-price="129" data-title="Knee Pad">
+        <img src="../image/Promotion1.jpg" alt="Knee Pad"/>
+        <h3>Knee Pad</h3>
+        <p>RM129.00</p>
+        <button onclick="addToCartElement(this)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card" data-id="gear2" data-category="gear" data-price="99" data-title="Headband">
+        <img src="../image/Promotion2.jpg" alt="Headband"/>
+        <h3>Headband</h3>
+        <p>RM99.00</p>
+        <button onclick="addToCartElement(this)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card" data-id="accessory1" data-category="accessories" data-price="9" data-title="Keychain">
+        <img src="../image/accessory1.webp" alt="Keychain"/>
+        <h3>Keychain</h3>
+        <p>RM9.00</p>
+        <button onclick="addToCartElement(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <aside class="cart">
+      <h2>🛒 Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: RM0.00</p>
+      <button onclick="showCheckout()" class="checkout-btn">Checkout</button>
+    </aside>
+
+    <div class="checkout-form" id="checkout-form" style="display: none;">
+      <h2>Checkout</h2>
+      <form id="checkoutform">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+
+        <label for="address">Shipping Address</label>
+        <textarea id="address" rows="3" required></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+
+      <p id="thank-you" class="thank-you" style="display: none;">
+        ✅ Thank you for your order!
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Website made by</h3>
+        <p>Chen HongZi</p>
+        <p>Gerald Ho</p>
+        <p>Liu XingChen</p>
+        <p>Liang YiShen</p>
+        <br>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 APU Basketball Club. All rights reserved.</p>
+      <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>

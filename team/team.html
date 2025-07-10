@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU | Basketball</title>
+
+    <!--link for icon Favicon-->
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+
+    <!--link for css file-->
+    <link rel = "stylesheet" href="team.css">
+
+    <!--link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--link for icon-->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!--link for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div class="header-welcome">
+      <header>
+        <input type="checkbox" name="menucheck" id="menucheck">
+        
+        <div class="logo">
+          <img src="../image/logo.png" class="apulogo" alt="logo">
+          <span>APU Basketball Club</span>
+        </div>
+
+        <div class="open-close">
+            <label for="menucheck">
+                <i class='bx  bx-menu-wider menu'></i>
+                <i class='bx  bx-x close'  ></i>
+            </label>
+        </div>
+
+        
+        <nav class="navigation">
+            <img src="../image/logo.png" class="apulogo" alt="logo">
+            <div class="divider"></div>
+            <a href="../home/home.html">Home</a>
+            <a href="../story/story.html">Our Story</a>
+            <a href="../news/news.html">News</a>
+            <a href="../team/team.html">Team</a>
+            <a href="../matches/matches.html">Matches</a>
+            <a href="../events/events.html">Events</a>
+            <a href="../gallery/gallery.html">Gallery</a>
+            <a href="../shop/shop.html">Shop</a>
+            <a href="../form/form.html">Join Us</a>
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../faq/faq.html">FAQ</a>
+        </nav>
+      </header>
+    </div>
+
+    <h1>Our Team</h1>
+
+    <div class="team">
+      <div class="team-filter">
+        <label for="position">Position:</label>
+        <select id="position">
+          <option value="all">All</option>
+          <option value="pg">Point Guard</option>
+          <option value="sg">Shooting Guard</option>
+          <option value="sf">Small Forward</option>
+          <option value="pf">Power Forward</option>
+          <option value="c">Center</option>
+        </select>
+      </div>
+        <div class="team-grid">
+          
+          <article class="team-card" data-type="pg">
+            <img src="../image/member1.png" class="memberpic" alt="member1">
+            <div class="team-detail">
+              <h3>Name: Chen HongZi</h3>
+              <p>Position: Point Guard</p>
+            </div>
+          </article>
+          
+          <article class="team-card" data-type="sg">
+            <img src="../image/member2.png" class="memberpic" alt="member2">
+            <div class="team-detail">
+              <h3>Name: Gerald Ho</h3>
+              <p>Position: Shooting Guard </p>
+              <br>
+              <p> Comments </p>
+            </div>
+          </article>
+
+          <article class="team-card" data-type="sf">
+            <img src="../image/member3.png" class="memberpic" alt="member3">
+            <div class="team-detail">
+              <h3>Name: Liang Yishen</h3>
+              <p>Position: Small Forward</p>
+            </div>
+          </article>
+
+          <article class="team-card" data-type="pf">
+            <img src="../image/member4.png" class="memberpic" alt="member4">
+            <div class="team-detail">
+              <h3>Name: Liu XingChen</h3>
+              <p>Position: Power Forward</p>
+            </div>
+          </article>
+
+          <article class="team-card" data-type="c">
+            <img src="../image/member5.png" class="memberpic" alt="member5">
+            <div class="team-detail">
+              <h3>Name: Yoo Jun Yang</h3>
+              <p>Position: Center</p>
+            </div>
+          </article>
+
+          <article class="team-card" data-type="pg">
+            <img src="../image/member6.png" class="memberpic" alt="member6">
+            <div class="team-detail">
+              <h3>Name: Iean Aqish bin Abdul Aziz</h3>
+              <p>Position: Point Guard</p>
+            </div>
+          </article>
+
+          <article class="team-card" data-type="sg">
+            <img src="../image/member7.png" class="memberpic" alt="member7">
+            <div class="team-detail">
+              <h3>Name: Ekin Lunar Limarya</h3>
+              <p>Position: Shooting Guard</p>
+            </div>
+          </article>
+        </div>
+    </div>
+    
+    <script src="team.js"></script>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Website made by</h3>
+        <p>Chen HongZi</p>
+        <p>Gerald Ho</p>
+        <p>Liu XingChen</p>
+        <p>Liang YiShen</p>
+        <br>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 APU Basketball Club. All rights reserved.</p>
+      <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+    </div>
+</footer>    
+</body>
+
+</html>

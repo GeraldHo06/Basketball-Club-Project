@@ -1,0 +1,121 @@
+/* ======= Header layout ======= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #212121;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.header-welcome .logo {
+  color: #ff6f00;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.logo .apulogo {
+  width: 100px;
+  height: auto;
+  padding: 5px;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation a {
+  color: #ff6f00;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+
+.navigation a:hover {
+  background-color: #fdd600;
+}
+
+.navigation .apulogo {
+  display: none;
+}
+
+.open-close .menu,
+.open-close .close {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+#menucheck {
+  display: none;
+}
+
+/* ======= Terms content styling ======= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 30px;
+}

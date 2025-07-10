@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU | Basketball</title>
+
+    <!--link for icon Favicon-->
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+
+    <!--link for css file-->
+    <link rel = "stylesheet" href="matches.css">
+
+    <!--link for javascript file-->
+    <script src="matches.js"></script>
+
+    <!--link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--link for icon-->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!--link for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div class="header-welcome">
+      <header>
+        <input type="checkbox" name="menucheck" id="menucheck">
+        
+        <div class="logo">
+          <img src="../image/logo.png" class="apulogo" alt="logo">
+          <span>APU Basketball Club</span>
+        </div>
+
+        
+        <nav class="navigation">
+            <img src="../image/logo.png" class="apulogo" alt="logo">
+            <div class="divider"></div>
+            <a href="../home/home.html">Home</a>
+            <a href="../story/story.html">Our Story</a>
+            <a href="../news/news.html">News</a>
+            <a href="../team/team.html">Team</a>
+            <a href="../matches/matches.html">Matches</a>
+            <a href="../events/events.html">Events</a>
+            <a href="../gallery/gallery.html">Gallery</a>
+            <a href="../shop/shop.html">Shop</a>
+            <a href="../form/form.html">Join Us</a>
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../faq/faq.html">FAQ</a>
+        </nav>
+
+        <div class="open-close">
+            <label for="menucheck">
+                <i class='bx  bx-menu-wider menu'></i>
+                <i class='bx  bx-x close'  ></i>
+            </label>
+        </div>
+      </header>
+    </div>
+
+    <h2>Matches</h2>
+
+    <div class="matches"></div>
+      <div class="matches-filter">
+        <label for="date-type">Status:</label>
+        <select id="date-type" onchange="filterbydate()">
+            <option value="All">All</option>
+            <option value="Upcoming">Upcoming</option>
+            <option value="Passed">Passed</option>
+        </select>
+      </div>
+
+      <table id="match-table" class="matches">
+          <thead>
+              <tr class="tablehead">
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Locations</th>
+              <th>Score</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>2025-01-29</td>
+                  <td><img src="../image/utar.png" class="uni-logo" alt="sunway"> UTAR</td>
+                  <td>UTAR</td>
+                  <td>UTAR 50 - 46 APU</td>
+              </tr>
+
+              <tr>
+                  <td>2025-03-09</td>
+                  <td><img src="../image/IMU.jpg" class="uni-logo" alt="sunway"> IMU</td>
+                  <td>IMU</td>
+                  <td>IMU 51 - 55 APU</td>
+              </tr>
+
+              <tr>
+                  <td>2025-05-13</td>
+                  <td><img src="../image/mmu.png" class="uni-logo" alt="sunway"> MMU</td>
+                  <td>Asia Pacific University</td>
+                  <td>APU 53 - 60 MMU</td>
+              </tr>
+
+              <tr>
+                  <td>2025-06-01</td>
+                  <td><img src="../image/Sunway.png" class="uni-logo" alt="sunway"> Sunway University</td>
+                  <td>Sunway University</td>
+                  <td>Sunway 67 - 59 APU</td>
+              </tr>
+
+              <tr>
+                  <td>2025-08-05</td>
+                  <td><img src="../image/Monash.png" class="uni-logo" alt="monash"> Monash</td>
+                  <td>Asia Pacific University</td>
+              </tr>
+
+              <tr>
+                  <td>2025-08-29</td>
+                  <td><img src="../image/Taylor.png" class="uni-logo" alt="taylor"> Taylor</td>
+                  <td>Taylor University</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+      
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Website made by</h3>
+        <p>Chen HongZi</p>
+        <p>Gerald Ho</p>
+        <p>Liu XingChen</p>
+        <p>Liang YiShen</p>
+        <br>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 APU Basketball Club. All rights reserved.</p>
+      <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+    </div>
+</footer>    
+</body>
+
+</html>

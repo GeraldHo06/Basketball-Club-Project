@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APU | Basketball</title>
+
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="events.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="header-welcome">
+    <header>
+      <input type="checkbox" name="menucheck" id="menucheck" />
+
+      <div class="logo">
+        <img src="../image/logo.png" class="apulogo" alt="logo" />
+        <span>APU Basketball Club</span>
+      </div>
+
+      <nav class="navigation">
+        <img src="../image/logo.png" class="apulogo" alt="logo" />
+        <div class="divider"></div>
+        <a href="../home/home.html">Home</a>
+        <a href="../story/story.html">Our Story</a>
+        <a href="../news/news.html">News</a>
+        <a href="../team/team.html">Team</a>
+        <a href="../matches/matches.html">Matches</a>
+        <a href="../events/events.html">Events</a>
+        <a href="../gallery/gallery.html">Gallery</a>
+        <a href="../shop/shop.html">Shop</a>
+        <a href="../form/form.html">Join Us</a>
+        <a href="../contact/contact.html">Contact Us</a>
+        <a href="../faq/faq.html">FAQ</a>
+      </nav>
+
+      <div class="open-close">
+        <label for="menucheck">
+          <i class="bx bx-menu-wider menu"></i>
+          <i class="bx bx-x close"></i>
+        </label>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <h1>Events</h1>
+
+    <div class="events">
+      <div class="events-filter">
+          <button data-filter="all">All</button>
+          <button data-filter="competition">Competition</button>
+          <button data-filter="training">Training</button>
+          <button data-filter="social">Social</button>
+          <button data-filter="shop">Shop</button>
+      </div>
+        <div class="events-grid">
+          <article class="events-card" data-type="competition">
+            <img src="../image/3pt-contest.jpg" class="eventspic" alt="3-point contest" />
+            <div class="news-content">
+              <h2>3-Point Contest</h2>
+              <p>Join us for our upcoming <b>three point contest</b>. Happening on:</p>
+              <p class="date">March 17 - 18, 2025</p>
+              <p>This is a chance to win APU Basketball team members.</p>
+              <p><b>July 17:</b> 10am – 4pm</p>
+              <p><b>July 18:</b> 10am – 2pm</p>
+            </div>
+          </article>
+
+          <article class="events-card" data-type="training">
+            <img src="../image/Events1.png" class="eventspic" alt="Basketball Workshop" />
+            <div class="news-content">
+              <h2>Basketball Workshop</h2>
+              <p>Interested in basketball but don’t know how to play? Our upcoming <b>Basketball Clinic</b> is just right for you. Happening on:</p>
+              <p class="date">August 3, 2025</p>
+              <p>The workshop will be led by coaches and team members.</p>
+              <p><b>August 3:</b> 1pm – 5pm</p>
+            </div>
+          </article>
+
+          <article class="events-card" data-type="training">
+            <img src="../image/profile.webp" class="eventspic" alt="Injury and Recovery" />
+            <div class="news-content">
+              <h2>Injury & Recovery Talks</h2>
+              <p>This is a very important topic for all athletes. Happening on:</p>
+              <p class="date">March 28 – 30, 2025</p>
+              <p>We have invited the head medical doctor of the national Malaysia team.</p>
+              <p><b>August 28:</b> 1pm – 4pm</p>
+              <p><b>August 29:</b> 10am – 6pm</p>
+              <p><b>August 30:</b> 10am – 12pm</p>
+            </div>
+          </article>
+
+          <article class="events-card" data-type="shop">
+            <img src="../image/50discount.png" class="eventspic" alt="Shop Promotion" />
+            <div class="news-content">
+              <h2>Shop Promotion</h2>
+              <p>All products in our shop will be on a <b>50% discount promotion</b>. Happening on:</p>
+              <p class="date">September 9, 2025</p>
+              <p>All income made on that day will be used to raise funds.</p>
+              <p><b>Venue:</b> Asia Pacific University, Block A, Level 4</p>
+            </div>
+          </article>
+
+          <article class="events-card" data-type="social">
+            <img src="../image/camp.png" class="eventspic" alt="Annual Club Camp" />
+            <div class="news-content">
+              <h2>Annual Club Camp</h2>
+              <p>It’s the season of our Annual Club Camp! Interested in spending a few days with our team?</p>
+              <p>We will be at Port Dickson for <b>5 days 4 nights</b>.</p>
+              <p class="date">November 25 – 29, 2025</p>
+              <p>Register at our club venue before September 25 to get the early-bird discount.</p>
+              <p><b>Venue:</b> Asia Pacific University, Block A, Level 4</p>
+            </div>
+          </article>
+        </div>
+      </div>
+   </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Website made by</h3>
+        <p>Chen HongZi</p>
+        <p>Gerald Ho</p>
+        <p>Liu XingChen</p>
+        <p>Liang YiShen</p>
+        <br />
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 APU Basketball Club. All rights reserved.</p>
+      <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+</body>
+</html>

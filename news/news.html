@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU | Basketball</title>
+
+    <!--link for icon Favicon-->
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+
+    <!--link for css file-->
+    <link rel = "stylesheet" href="news.css">
+
+    <!--link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--link for icon-->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!--link for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div class="header-welcome">
+      <header>
+        <input type="checkbox" name="menucheck" id="menucheck">
+        
+        <div class="logo">
+          <img src="../image/logo.png" class="apulogo" alt="logo">
+          <span>APU Basketball Club</span>
+        </div>
+    
+
+        
+        <nav class="navigation">
+            <img src="../image/logo.png" class="apulogo" alt="logo">
+            <div class="divider"></div>
+            <a href="../home/home.html">Home</a>
+            <a href="../story/story.html">Our Story</a>
+            <a href="../news/news.html">News</a>
+            <a href="../team/team.html">Team</a>
+            <a href="../matches/matches.html">Matches</a>
+            <a href="../events/events.html">Events</a>
+            <a href="../gallery/gallery.html">Gallery</a>
+            <a href="../shop/shop.html">Shop</a>
+            <a href="../form/form.html">Join Us</a>
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../faq/faq.html">FAQ</a>
+        </nav>
+
+
+        <div class="open-close">
+            <label for="menucheck">
+                <i class='bx  bx-menu-wider menu'></i>
+                <i class='bx  bx-x close'  ></i>
+            </label>
+        </div>
+      </header>
+    </div>
+
+    <h1>Latest News</h1>
+
+      <div class="news">
+        <div class="news-filter">
+          <label for="newstype">Select type of news:</label>
+          <select id="newstype">
+            <option value="all">All</option>
+            <option value="match">Matches</option>
+            <option value="member">Members</option>
+            <option value="events">Events</option>
+            <option value="shop">Merchandise</option>
+          </select>
+        </div>
+          <div class="news-grid">
+          
+          <article class="news-card" data-type="match">
+            <img src="../image/champion.png" class="newspic" alt="member1">
+            <div class="news-content">
+              <h3>Champion</h3>
+              <br>
+              <p class="date">March 17, 2025</p>
+              <br>
+              <p>
+                The crowd erupted as both teams battled fiercely, trading points. 
+                With the game tied and seconds left, APU’s star player broke through defenders and launched a final shot. 
+                As the buzzer sounded—swish. The crowd went wild. APU had won its first championship.
+              </p>
+              <br>
+              <p><b>APU 55 - 51 Away</b></p>
+            </div>
+          </article>
+          
+          <article class="news-card" data-type="member">
+            <img src="../image/member7.png" class="newspic" alt="member1">
+            <div class="news-content">
+              <h3>New Member</h3>
+              <br>
+              <p class="date">April 10, 2025</p>
+              <br>
+              <p>A new force has entered the court!!</p>
+              <p>The squad just got stronger!!</p>
+              <div class="viewroaster">
+                <br>
+                <a href="../team/team.html" class="roaster">View full roaster</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card" data-type="shop">
+            <img src="../image/50discount.png" class="newspic" alt="member1">
+            <div class="news-content">
+              <h3>50% Discount on September 9</h3>
+              <br>
+              <p class="date">June 10, 2025</p>
+            </div>
+          </article>
+
+          <article class="news-card" data-type="member">
+            <img src="../image/member4.png" class="newspic" alt="member1">
+            <div class="news-content">
+              <h3>Injury</h3>
+              <br>
+              <p class="date">June 21, 2025</p>
+              <br>
+              <p> Gerald Ho tore his muscles during traing.
+                <br>He will not be playing in our next game against Monash
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!--javascript file-->
+      <script src="news.js"></script>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3>Website made by</h3>
+            <p>Chen HongZi</p>
+            <p>Gerald Ho</p>
+            <p>Liu XingChen</p>
+            <p>Liang YiShen</p>
+            <br>
+            <h3>Contact</h3>
+            <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+            <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 APU Basketball Club. All rights reserved.</p>
+          <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+        </div>
+      </footer>    
+
+    

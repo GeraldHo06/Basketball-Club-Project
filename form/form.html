@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU | Basketball</title>
+
+    <!--link for icon Favicon-->
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+
+    <!--link for css file-->
+    <link rel = "stylesheet" href="form.css">
+
+    <!--link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--link for icon-->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!--link for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div class="header-welcome">
+      <header>
+        <input type="checkbox" name="menucheck" id="menucheck">
+        
+        <div class="logo">
+          <img src="../image/logo.png" class="apulogo" alt="logo">
+          <span>APU Basketball Club</span>
+        </div>
+
+        
+        <nav class="navigation">
+            <img src="../image/logo.png" class="apulogo" alt="logo">
+            <div class="divider"></div>
+            <a href="../home/home.html">Home</a>
+            <a href="../story/story.html">Our Story</a>
+            <a href="../news/news.html">News</a>
+            <a href="../team/team.html">Team</a>
+            <a href="../matches/matches.html">Matches</a>
+            <a href="../events/events.html">Events</a>
+            <a href="../gallery/gallery.html">Gallery</a>
+            <a href="../shop/shop.html">Shop</a>
+            <a href="../form/form.html">Join Us</a>
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../faq/faq.html">FAQ</a>
+        </nav>
+
+        <div class="open-close">
+            <label for="menucheck">
+                <i class='bx  bx-menu-wider menu'></i>
+                <i class='bx  bx-x close'  ></i>
+            </label>
+        </div>
+      </header>
+    </div>
+
+    <form class="join-form">
+    <h2>Join APU Basketball Club</h2>
+
+    <div class="form-section">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="13" max="30" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Prefer not to say</option>
+      </select>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number (optional)</label>
+      <input type="tel" id="phone" name="phone" />
+    </div>
+
+    <div class="form-section">
+      <label>Role signing up for</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="role" value="player" /> Player</label>
+        <label><input type="checkbox" name="role" value="manager" /> Manager</label>
+        <label><input type="checkbox" name="role" value="volunteer" /> Volunteer</label>
+        <label><input type="checkbox" name="role" value="media" /> Photographer/Videographer</label>
+        <label><input type="checkbox" name="role" value="cheer" /> Cheerleading</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label for="experience">How long have you played basketball?</label>
+      <select id="experience" name="experience">
+        <option>Never played</option>
+        <option>Less than 1 year</option>
+        <option>1-3 years</option>
+        <option>3-5 years</option>
+        <option>5+ years</option>
+      </select>
+
+      <label for="position">Position (if any)</label>
+      <input type="text" id="position" name="position" placeholder="(Point Guard, Shooting Guard, Small Forward, Power Forward, Center)" />
+    </div>
+
+    <div class="form-section">
+      <label for="reason">Why do you want to join?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Tell us why you're interested..."></textarea>
+    </div>
+
+    <div class="form-section">
+      <label>Time available</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="availability" value="weekday-morning" /> Weekday Morning</label>
+        <label><input type="checkbox" name="availability" value="weekday-afternoon" /> Weekday Afternoon</label>
+        <label><input type="checkbox" name="availability" value="weekday-evening" /> Weekday Evening</label>
+        <label><input type="checkbox" name="availability" value="weekend-morning" /> Weekend Morning</label>
+        <label><input type="checkbox" name="availability" value="weekend-afternoon" /> Weekend Afternoon</label>
+        <label><input type="checkbox" name="availability" value="weekend-evening" /> Weekend Evening</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label for="photo">Upload Photo (optional)</label>
+      <input type="file" id="photo" name="photo" accept="image/*" />
+    </div>
+
+    <button type="submit" class="submit-btn">Join the Club</button>
+  </form>
+  <script src="form.js"></script>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Website made by</h3>
+        <p>Chen HongZi</p>
+        <p>Gerald Ho</p>
+        <p>Liu XingChen</p>
+        <p>Liang YiShen</p>
+        <br>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p>Email: <a href="mailto:apubasketballclub@mail.apu.edu.my">basketballclub@mail.apu.edu.my</a></p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 APU Basketball Club. All rights reserved.</p>
+      <p><a href="../terms/terms.html">Terms</a> | <a href="../privacy/privacy.html">Privacy</a></p>
+    </div>
+</footer>    
+</body>
+
+</html>
